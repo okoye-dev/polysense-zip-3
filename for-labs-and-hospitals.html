@@ -10,6 +10,10 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body
     class="min-h-screen bg-gradient-to-t from-[#06102a] to-[#000423] tracking-tight text-white"
@@ -92,6 +96,16 @@
             >Leadership</a
           >
         </li>
+        <li onclick="closeNav()" class="w-full hover:text-green-500">
+          <a class="px-5 py-2 duration-300 ease-in-out" href="/investors.html"
+            >Investors</a
+          >
+        </li>
+        <li onclick="closeNav()" class="w-full hover:text-green-500">
+          <a class="px-5 py-2 duration-300 ease-in-out" href="/careers.html"
+            >Careers</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -145,6 +159,22 @@
                     class="duration-300 hover:text-green-500"
                     onclick="closeNav()"
                     >Leadership</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/investors.html"
+                    class="duration-300 hover:text-green-500"
+                    onclick="closeNav()"
+                    >Investors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/careers.html"
+                    class="duration-300 hover:text-green-500"
+                    onclick="closeNav()"
+                    >Careers</a
                   >
                 </li>
               </ul>
@@ -235,7 +265,14 @@
     </div>
 
     <!-- footer -->
-    <footer id="footer"></footer>
+    <footer id="footer" data-aos="fade-up"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Animation occurs only once
+      });
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
