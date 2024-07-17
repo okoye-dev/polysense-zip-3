@@ -10,6 +10,10 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body
     class="min-h-screen bg-gradient-to-t from-[#06102a] to-[#000423] tracking-tight text-white"
@@ -60,7 +64,6 @@
             >Inventory Management</a
           >
         </li>
-
         <li class="w-full hover:text-green-500" onclick="closeNav()">
           <a
             class="px-5 py-2 duration-300 ease-in-out"
@@ -71,8 +74,7 @@
         </li>
       </ul>
     </div>
-
-   <!-- About Hover Menu -->
+    <!-- About Hover Menu -->
     <div
       onmouseover="slideIn()"
       onmouseout="slideOut()"
@@ -104,7 +106,6 @@
         </li>
       </ul>
     </div>
-
     <!-- Side Navigation -->
     <div
       id="sidenav"
@@ -176,7 +177,6 @@
               </ul>
             </div>
           </li>
-
           <li class="flex flex-col">
             <p id="solutions" class="text-lg text-white/50">Solutions</p>
             <div class="py-3 text-start">
@@ -232,7 +232,6 @@
               </ul>
             </div>
           </li>
-
           <li>
             <a
               href="/contact.html"
@@ -240,7 +239,6 @@
               >Contact</a
             >
           </li>
-
           <li>
             <a href="contact.html" class="duration-300 ease-in-out"
               ><button
@@ -260,38 +258,46 @@
       <div
         class="flex w-full flex-col items-center justify-center gap-3 lg:flex-row"
       >
-        <span class="lg:w-3/5"
-          ><h1
+        <span class="lg:w-3/5">
+          <h1
             class="leading-12 pb-5 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl"
+            data-aos="fade-down"
           >
             Take Control with
             <span class="text-green-500">PolySense Inventory Management</span>
           </h1>
-          <p class="w-[90%] pb-2 lg:text-lg">
+          <p
+            class="w-[90%] pb-2 lg:text-lg"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
             Eliminate Guesswork. Record and organize inventory details with
             ease, removing uncertainties and boosting efficiency. Assign
             inventory to specific projects, ensuring precise tracking and
             optimal resource allocation.
           </p>
         </span>
-
         <span
-          class="my-5 shadow-2xl shadow-red-800/40 flex w-full items-center justify-center overflow-hidden rounded-3xl border md:w-4/5 lg:w-1/2"
+          class="my-5 flex w-full items-center justify-center overflow-hidden rounded-3xl bg-white/10 p-3 md:w-4/5 lg:w-1/2"
           ><img
             src="assets/inventory-management/inventory-management.png"
             alt="inventory-management"
             width="1000"
             height="800"
-            class="w-full object-cover"
+            class="w-full rounded-3xl object-cover"
+            data-aos="zoom-in"
         /></span>
       </div>
-
-      <h1 class="pb-10 pt-20 text-center text-4xl font-semibold lg:text-5xl">
+      <h1
+        class="pb-10 pt-20 text-center text-4xl font-semibold lg:text-5xl"
+        data-aos="fade-down"
+      >
         <span class="text-green-500">Power,</span> In Your Hands
       </h1>
       <section class="flex flex-wrap justify-center gap-6 pb-10">
         <div
           class="flex max-w-md flex-col gap-4 rounded-xl bg-white/5 px-8 py-6 md:text-lg"
+          data-aos="fade-left"
         >
           <span class="flex flex-col justify-center gap-3">
             <img
@@ -309,15 +315,15 @@
         </div>
         <div
           class="flex max-w-md flex-col gap-4 rounded-xl bg-white/5 px-8 py-6"
+          data-aos="fade-right"
         >
-          <span class="flex flex-col justify-center gap-3">
-            <img
-              src="assets/inventory-management/find.png"
-              alt="fast search"
-              width="40"
-              height="40"
-            />
-            <h2 class="text-2xl text-green-400">Find What You Need, Fast</h2>
+          <img
+            src="assets/inventory-management/find.png"
+            alt="fast search"
+            width="40"
+            height="40"
+          />
+          <h2 class="text-2xl text-green-400">Find What You Need, Fast</h2>
           <p>
             Quickly locate items within your inventory, enhancing operational
             responsiveness.
@@ -325,15 +331,15 @@
         </div>
         <div
           class="flex max-w-md flex-col gap-4 rounded-xl bg-white/5 px-8 py-6"
+          data-aos="fade-left"
         >
-         <span class="flex flex-col justify-center gap-3">
-            <img
-              src="assets/inventory-management/decision-making.png"
-              alt="decision-making"
-              width="40"
-              height="40"
-            />
-            <h2 class="text-2xl text-green-400">Make Informed Decisions</h2>
+          <img
+            src="assets/inventory-management/decision-making.png"
+            alt="decision-making"
+            width="40"
+            height="40"
+          />
+          <h2 class="text-2xl text-green-400">Make Informed Decisions</h2>
           <p>
             Gain insights into inventory trends and consumption patterns,
             empowering better planning and cost control.
@@ -341,9 +347,15 @@
         </div>
       </section>
     </div>
-
     <!-- footer -->
-    <footer id="footer"></footer>
+    <footer id="footer" data-aos="fade-up"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Animation occurs only once
+      });
+    </script>
     <script src="main.js"></script>
   </body>
 </html>

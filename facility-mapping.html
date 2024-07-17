@@ -10,6 +10,10 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body
     class="min-h-screen bg-gradient-to-t from-[#06102a] to-[#000423] tracking-tight text-white"
@@ -263,6 +267,7 @@
         <span class="lg:w-3/5"
           ><h1
             class="leading-12 pb-5 text-5xl font-bold tracking-tighter lg:text-6xl"
+            data-aos="fade-down"
           >
             Interactive
             <span class="text-green-500">3D Facility Mapping</span>
@@ -443,6 +448,13 @@
     </section>
 
     <footer id="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Animation occurs only once
+      });
+    </script>
     <script src="main.js"></script>
   </body>
 </html>

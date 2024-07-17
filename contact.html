@@ -10,6 +10,10 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body
     class="min-h-screen bg-gradient-to-t from-[#06102a] to-[#000423] tracking-tight text-white"
@@ -255,19 +259,24 @@
       </nav>
     </div>
 
-    <!-- Request a Demo Form -->
+    <!-- Content -->
 
-    <div class="mx-auto w-full rounded-lg py-6 text-white shadow-emerald-950">
-      <div class="bg-white/5 pb-10 pt-24 lg:py-24">
+    <div class="mx-auto w-full rounded-lg py-6 text-white shadow-emerald-950 overflow-hidden">
+      <div class="bg-white/5 pb-10 pt-24 lg:py-24 overflow-hidden">
         <h1
           class="px-6 text-4xl font-semibold sm:px-10 md:text-5xl lg:pt-14 lg:text-6xl"
+          data-aos="fade-down"
         >
           Contact Us
         </h1>
 
-        <p class="px-6 py-2 sm:px-10 md:w-3/4 md:py-4 lg:w-2/3">
+        <p
+          class="px-6 py-2 sm:px-10 md:w-3/4 md:py-4 lg:w-2/3"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           With
-          <span class="text-lg font-semibold text-green-400"
+          <span class="text-lg font-semibold text-green-500"
             >PolySense Solutions</span
           >, you're not just acquiring a solution; you're gaining a partner
           dedicated to driving efficiency and growth in your operation.
@@ -275,6 +284,7 @@
       </div>
       <h2
         class="my-8 text-center text-2xl font-bold text-green-500 md:my-14 md:text-3xl lg:text-4xl"
+        data-aos="zoom-out"
       >
         Request a Demo
       </h2>
@@ -282,7 +292,7 @@
         id="contactForm"
         class="flex flex-wrap justify-center gap-4 px-6 pb-10 md:pb-20 lg:px-20"
       >
-        <div>
+        <div data-aos="fade-down">
           <label for="firstName" class="block text-sm font-medium text-white/80"
             >First Name</label
           >
@@ -294,7 +304,7 @@
             required
           />
         </div>
-        <div>
+        <div data-aos="fade-down">
           <label for="lastName" class="block text-sm font-medium text-white/80"
             >Last Name</label
           >
@@ -306,7 +316,7 @@
             required
           />
         </div>
-        <div>
+        <div data-aos="fade-down">
           <label
             for="businessEmail"
             class="block text-sm font-medium text-white/80"
@@ -320,7 +330,7 @@
             required
           />
         </div>
-        <div>
+        <div data-aos="fade-down">
           <label for="jobTitle" class="block text-sm font-medium text-white/80"
             >Job Title</label
           >
@@ -332,7 +342,7 @@
             required
           />
         </div>
-        <div>
+        <div data-aos="fade-down">
           <label for="country" class="block text-sm font-medium text-white/80"
             >Country/Region</label
           >
@@ -344,7 +354,7 @@
             required
           />
         </div>
-        <div>
+        <div data-aos="fade-down">
           <label for="message" class="block text-sm font-medium text-white/80"
             >Got a custom message?</label
           >
@@ -356,7 +366,7 @@
             required
           ></textarea>
         </div>
-        <div class="flex w-full justify-center">
+        <div class="flex w-full justify-center" data-aos="zoom-in">
           <button
             type="submit"
             class="w-40 rounded-md bg-green-600 px-4 py-2 font-semibold text-white shadow-sm duration-300 hover:bg-green-500"
@@ -366,7 +376,16 @@
         </div>
       </form>
     </div>
-    <footer id="footer"></footer>
+    <footer id="footer" data-aos="fade-up"></footer>
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Animation occurs only once
+      });
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
