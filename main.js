@@ -50,6 +50,13 @@ function slideSolutionsNavOut() {
   solutionsNav.classList.add("opacity-0");
 }
 
+function joinNewsletter(event) {
+  event.preventDefault();
+  const email = document.getElementById("emailInput").value;
+  console.log("Email:", email);
+  document.getElementById("newsletterForm").reset();
+}
+
 // Request a demo form
 document
   .getElementById("contactForm")
@@ -64,4 +71,5 @@ document
       message: document.getElementById("message").value,
     };
     console.log("Form Data:", formData);
+    document.getElementById("contactForm").reset();
   });

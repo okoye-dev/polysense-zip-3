@@ -1,5 +1,40 @@
-<body class="absolute bottom-0 tracking-tight">
+<body class="absolute bottom-0 overflow-hidden tracking-tight">
   <span class="flex h-[2px] w-full bg-white/20"></span>
+
+  <section
+    class="flex flex-col items-center justify-center gap-4 bg-gradient-to-tr from-purple-500/30 via-green-500/20 px-6 py-20 sm:px-10"
+  >
+    <h1 class="text-center text-3xl font-semibold md:text-4xl lg:text-5xl">
+      Subscribe to our <span class="text-green-500">Newsletter</span>
+    </h1>
+    <p
+      class="w-4/5 text-center text-sm sm:text-base md:w-2/3 md:text-lg lg:w-1/2"
+    >
+      Get the latest news and updates on hardware and system
+      <br class="hidden sm:flex" />performance optimisations from PolySense
+      Solutions
+    </p>
+    <form
+      id="newsletterForm"
+      onsubmit="joinNewsletter(event)"
+      action="submit"
+      class="relative flex w-[16rem] justify-between rounded-3xl border border-green-300/30 bg-none px-2 py-3 shadow-sm sm:w-[23rem] lg:w-[24.5rem]"
+    >
+      <input
+        id="emailInput"
+        type="text"
+        placeholder="Enter your email"
+        class="rounded-full bg-transparent px-2 focus-within:bg-transparent focus:border-none focus:outline-none"
+      />
+      <button
+        class="absolute right-2 top-2 rounded-full bg-green-500 px-4 py-1 duration-300 hover:bg-green-400"
+        type="submit"
+      >
+        Subscribe
+      </button>
+    </form>
+  </section>
+
   <section class="flex flex-wrap gap-16 py-10 md:gap-0 lg:justify-between">
     <div class="flex w-96 flex-col px-6 sm:px-10 md:pb-10">
       <a href="/">
@@ -45,16 +80,6 @@
       <li class="duration-300 hover:text-green-500">
         <a href="/contact.html">Contact</a>
       </li>
-      <li>
-        <a href="contact.html" class="duration-300 ease-in-out"
-          ><button
-            type="button"
-            class="flex items-center justify-center text-nowrap rounded-xl bg-blue-500 px-4 py-2 font-medium text-white duration-300 ease-in-out hover:rounded-md hover:bg-blue-600"
-          >
-            Request a demo
-          </button></a
-        >
-      </li>
     </ul>
 
     <div class="flex w-60 flex-col px-6 sm:px-10 md:pb-10">
@@ -79,6 +104,11 @@
           <li>
             <a href="/careers.html" class="duration-300 hover:text-green-500"
               >Careers</a
+            >
+          </li>
+          <li>
+            <a href="/news.html" class="duration-300 hover:text-green-500"
+              >News</a
             >
           </li>
         </ul>
